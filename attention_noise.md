@@ -24,6 +24,9 @@ A6. 帯域限定ガウスノイズ（Band-limited Gaussian） — A6_band_limite
 目的：特定周波数帯の干渉（EMI 等）を模擬。
 概要：所定のパスバンドのみ通過させたガウスノイズを加算。
 
+
+
+
 B. 構造特性に基づく加算ノイズ
 
 B1. インパルス（スパース）ノイズ — B1_impulse_salt_pepper
@@ -46,6 +49,12 @@ B5. ショット／ポアソンノイズ（Shot/Poisson Noise） — B5_poisson_
 目的：離散イベント起源の統計的揺らぎ評価。
 概要：ポアソン過程に基づくイベント列を加算。
 
+
+
+
+
+
+
 C. 振幅変調（乗算）型ノイズ
 
 C1. ゲインゆらぎ（Amplitude Modulation） — C1_gain_jitter_am
@@ -59,6 +68,9 @@ C2. エンベロープ・フェージング（Envelope Fading） — C2_envelope
 C3. 区間ゲインシフト（Block-wise Gain Shift） — C3_blockwise_gain_shift
 目的：区間単位の感度変化・接触不良の模擬。
 概要：所定区間ごとに定数ゲインを切り替えて乗算。
+
+
+
 
 D. 時間軸擾乱（サンプリング起因）
 
@@ -77,6 +89,10 @@ D3. 重複／スキップ（Duplicate/Skip Samples） — D3_duplicate_skip_samp
 D4. 非線形遅延（Nonlinear Delay） — D4_nonlinear_delay
 目的：経路依存の群遅延・フィルタ影響の模擬。
 概要：時間軸を位置依存で変形し再配置。
+
+
+
+
 
 E. 測定器由来の非線形／量子化
 
@@ -100,9 +116,11 @@ E5. 量子化ビット低下 — E5_quantization_bitdrop
 目的：分解能低下・ビット落ちの影響評価。
 概要：量子化ビット数を削減して丸め誤差を導入。
 
-E6. クロストーク混入 — E6_crosstalk_leak
-目的：他チャンネルからの漏れ込み評価。
-概要：他チャネルのスケーリングコピーを加算。
+
+
+
+
+
 
 F. マスキング／欠落
 
@@ -117,6 +135,13 @@ F2. ランダム時間マスク — F2_random_time_mask
 F3. 帯域ノッチ（Bandstop/Notch） — F3_bandstop_notch
 目的：特定周波数帯の消失・フィルタ欠落の模擬。
 概要：指定帯域を抑圧／ゼロ化。
+
+
+
+
+
+
+
 
 G. 非定常シナリオ
 
